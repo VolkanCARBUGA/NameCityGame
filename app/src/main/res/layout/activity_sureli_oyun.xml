@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".SureliOyun">
+
+    <TextView
+        android:id="@+id/Süre"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:background="#FF4040"
+        android:gravity="center"
+        android:text="3:00"
+        android:textColor="#F6F7F9"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/ilBilgi"
+        app:layout_constraintEnd_toEndOf="@+id/puan"
+        app:layout_constraintStart_toStartOf="@+id/puan"
+        app:layout_constraintTop_toBottomOf="@+id/puan" />
+
+    <EditText
+        android:id="@+id/Tahmin"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="tahminini Gir"
+        android:inputType="textPersonName"
+        android:textColorHint="#FF5252"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sbtnHarfAl"
+        app:layout_constraintEnd_toEndOf="@+id/İl"
+        app:layout_constraintStart_toStartOf="@+id/İl"
+        app:layout_constraintTop_toBottomOf="@+id/İl" />
+
+    <Button
+        android:id="@+id/sbtnHarfAl"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:onClick="sbtnHarfAl"
+        android:orientation="horizontal"
+        android:text="Harf Al"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sbtnTahmin"
+        app:layout_constraintEnd_toEndOf="@+id/sbtnTahmin"
+        app:layout_constraintStart_toStartOf="@+id/sbtnTahmin"
+        app:layout_constraintTop_toBottomOf="@+id/Tahmin" />
+
+    <TextView
+        android:id="@+id/puan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="57dp"
+        android:gravity="center"
+        android:text="Puan : "
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/Süre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ilBilgi"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="il bilgisi"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/İl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Süre"
+        app:layout_constraintTop_toBottomOf="@+id/Süre" />
+
+    <TextView
+        android:id="@+id/İl"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/Tahmin"
+        app:layout_constraintEnd_toEndOf="@+id/ilBilgi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilBilgi" />
+
+    <Button
+        android:id="@+id/sbtnTahmin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="118dp"
+        android:onClick="sbtnTahmin"
+        android:text="Tahmin yap"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbtnHarfAl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
